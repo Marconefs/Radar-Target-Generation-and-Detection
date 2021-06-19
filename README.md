@@ -10,7 +10,7 @@ This work presents the algorithm and results obtained with the third project pro
 The radar can sense the angle of the return signal by steering the antenna beam at the programmed angles. I is done by a constant phase increments, as illustrated in the figure bellow, where Φ are electronic components (Phase shifters) responsible for the phase changes to make the beam steer in a desired direction.
 
 <p align="center">
-  <img src="media/ANGLEARRIVEL.png" width="400" height="250"/>
+  <img src="media/ANGLEARRIVEL.png" width="400" height="300"/>
   <em><br>Fig. 2 - Beam Steering Design (Source: analog.com)</em>
 </p>
 
@@ -34,19 +34,19 @@ In this project the following Radar Specifications are used:
 **Step 3 - RANGE DOPPLER RESPONSE:** First, reshape the beat signal vector into Number_of_chirps x Number_of_samples_on_each_chirp array. Then, run a 2D FFT (Fast Furrier Transform) on the mixed signal (beat signal) output and generate a range doppler map (RDM). The output of Range Doppler response represents an image with Range on one axis and Doppler on the other.
 
 <p align="center">
-  <img src="media/SFND 2DFFT on FMCW Range and Doppler Estimation.png" width="450" height="200"/>
+  <img src="media/SFND 2DFFT on FMCW Range and Doppler Estimation.png" width="450" height="300"/>
   <em><br>Fig. 4 - SFND 2DFFT on FMCW Range and Doppler Estimation (Source: UDACITY)</em>
 </p>
 
 <p align="center">
-  <img src="media/2D-FFT-output-Range-Doppler-Map.png" width="450" height="300"/>
+  <img src="media/2DFFToutput.jpg" width="450" height="300"/>
   <em><br>Fig. 5 - 2D FFT output</em>
 </p>
 
 **Step 4 - CFAR implementation:** 2D CFAR technique is used in the Range Doppler Map to resolve the false alarm issue (as ilustrated in figure 6).
 
 <p align="center">
-  <img src="media/RBP.png" width="450" height="300"/>
+  <img src="media/RBP.png" width="500" height="250"/>
   <em><br>Fig. 6 - False alarm (Source: UDACITY)</em>
 </p>
 
@@ -58,6 +58,6 @@ The CFAR process is described as follows. Firstly, the number of training and gu
 </p>
 
 <p align="center">
-  <img src="media/The-output-of-the-2D-CFAR-process.png" width="450" height="300"/>
+  <img src="media/2DCFARoutput .jpg" width="450" height="300"/>
   <em><br>Fig. 8 - CFAR output</em>
 </p>
