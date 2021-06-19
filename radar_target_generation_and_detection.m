@@ -85,7 +85,7 @@ end
  % *%TODO* :
 %reshape the vector into Nr*Nd array. Nr and Nd here would also define the size of
 %Range and Doppler FFT respectively.
-Mix = reshape(Mix, [Nr, Nd]); % Number of chirps(rows) x Number of samples on each chirp(cols)
+Mix = reshape(Mix, [Nr, Nd]); % Number of samples on each chirp (rows) x Number of chirps (cols)
 
  % *%TODO* :
 %run the FFT(Fast Furrier Transform) on the beat signal along the range bins dimension (Nr) and
