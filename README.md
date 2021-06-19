@@ -39,7 +39,7 @@ In this project the following Radar Specifications are used:
 </p>
 
 <p align="center">
-  <img src="media/2D FFT output - Range Doppler Map.png" width="450" height="300"/>
+  <img src="media/2D-FFT-output-Range-Doppler-Map.png" width="450" height="300"/>
   <em><br>Fig. 5 - 2D FFT output</em>
 </p>
 
@@ -58,6 +58,6 @@ The CFAR process is described as follows. Firstly, the number of training and gu
 </p>
 
 <p align="center">
-  <img src="media/The output of the 2D CFAR process.png" width="450" height="300"/>
+  <img src="media/The-output-of-the-2D-CFAR-process.png" width="450" height="300"/>
   <em><br>Fig. 8 - CFAR output</em>
 </p>
