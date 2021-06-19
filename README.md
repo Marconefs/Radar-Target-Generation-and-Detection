@@ -22,16 +22,16 @@ In this project the following Radar Specifications are used:
 
 ## Algorithm
 
-Step 1 - FMCW Waveform Generation: Design the FMCW waveform by Calculating the Bandwidth (B), Chirp Time (Tchirp) and Slope (slope) according to Radar Specifications.
+**Step 1 - FMCW Waveform Generation:** Design the FMCW waveform by Calculating the Bandwidth (B), Chirp Time (Tchirp) and Slope (slope) according to Radar Specifications.
 
-Step 2 - Signal generation and Moving Target simulation: With a defined Range of the Target for constant velocity, update the transmitted and received signal and then find the beat signal (fb).
+**Step 2 - Signal generation and Moving Target simulation:** With a defined Range of the Target for constant velocity, update the transmitted and received signal and then find the beat signal (fb).
 
 <p align="center">
   <img src="media/FMCW.png" width="450" height="200"/>
   <em><br>Fig. 3 - FMCW (Source: emagtech, modified figure)</em>
 </p>
 
-Step 3 - RANGE DOPPLER RESPONSE: First, reshape the beat signal vector into Number_of_chirps x Number_of_samples_on_each_chirp array. Then, run a 2D FFT (Fast Furrier Transform) on the mixed signal (beat signal) output and generate a range doppler map (RDM). The output of Range Doppler response represents an image with Range on one axis and Doppler on the other.
+**Step 3 - RANGE DOPPLER RESPONSE:** First, reshape the beat signal vector into Number_of_chirps x Number_of_samples_on_each_chirp array. Then, run a 2D FFT (Fast Furrier Transform) on the mixed signal (beat signal) output and generate a range doppler map (RDM). The output of Range Doppler response represents an image with Range on one axis and Doppler on the other.
 
 <p align="center">
   <img src="media/SFND 2DFFT on FMCW Range and Doppler Estimation.png" width="450" height="200"/>
@@ -39,11 +39,11 @@ Step 3 - RANGE DOPPLER RESPONSE: First, reshape the beat signal vector into Numb
 </p>
 
 <p align="center">
-  <img src="/2D FFT output - Range Doppler Map.png" width="450" height="300"/>
+  <img src="media/2D FFT output - Range Doppler Map.png" width="450" height="300"/>
   <em><br>Fig. 5 - 2D FFT output</em>
 </p>
 
-Step 4 - CFAR implementation: 2D CFAR technique is used in the Range Doppler Map to resolve the false alarm issue (as ilustrated in figure 6).
+**Step 4 - CFAR implementation:** 2D CFAR technique is used in the Range Doppler Map to resolve the false alarm issue (as ilustrated in figure 6).
 
 <p align="center">
   <img src="media/RBP.png" width="450" height="300"/>
@@ -58,6 +58,6 @@ The CFAR process is described as follows. Firstly, the number of training and gu
 </p>
 
 <p align="center">
-  <img src="/The output of the 2D CFAR process.png" width="450" height="300"/>
+  <img src="media/The output of the 2D CFAR process.png" width="450" height="300"/>
   <em><br>Fig. 8 - CFAR output</em>
 </p>
